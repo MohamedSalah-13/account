@@ -5,10 +5,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class LoginApplication extends Application {
+public class App extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader fxmlLoader =new FXMLLoader(LoginApplication.class.getResource("login.fxml"));
+        FXMLLoader fxmlLoader =new FXMLLoader(getClass().getResource("fxml/login.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 400, 300);
         stage.setTitle("شاشة الدخول");
         stage.setScene(scene);

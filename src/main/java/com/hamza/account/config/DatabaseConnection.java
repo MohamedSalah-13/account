@@ -1,4 +1,4 @@
-package com.hamza.account;
+package com.hamza.account.config;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

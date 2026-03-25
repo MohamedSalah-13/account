@@ -1,5 +1,6 @@
-package com.hamza.account;
+package com.hamza.account.controller;
 
+import com.hamza.account.config.DatabaseConnection;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;

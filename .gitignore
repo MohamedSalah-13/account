@@ -4,6 +4,7 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 .kotlin
+folder/
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
