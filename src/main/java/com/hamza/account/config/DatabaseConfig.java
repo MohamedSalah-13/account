@@ -23,7 +23,8 @@ public class DatabaseConfig {
     }
 
     private static void loadProperties() {
-        try (InputStream input = DatabaseConfig.class.getResourceAsStream("config.properties")) {
+        try (InputStream input = DatabaseConfig.class
+                .getClassLoader().getResourceAsStream("config.properties")) {
             if (input == null) {
                 throw new RuntimeException("لم يتم العثور على الملف");
             }

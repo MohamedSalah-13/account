@@ -1,5 +1,6 @@
 package com.hamza.account;
 
+import com.hamza.account.config.DatabaseConfig;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -14,5 +15,11 @@ public class App extends Application {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
+    }
+
+    @Override
+    public void stop(){
+        // عند إنهاء التطبيق يتم إغلاق ال connection pool
+        DatabaseConfig.closePool();
     }
 }
